@@ -8,14 +8,14 @@ const webpack = require('webpack');
 module.exports = {
     mode: 'development',
     entry: {
-        app: './client/index.js'
+        app: './client/index.mjs'
     },
     devtool: 'inline-source-map',
     devServer: {
         contentBase: './dist',
         https: {
-            key: fs.readFileSync('server/conf/ryans-key.pem'),
-            cert: fs.readFileSync('server/conf/ryans-cert.pem')
+            key: fs.readFileSync('server/conf/key.pem'),
+            cert: fs.readFileSync('server/conf/cert.pem')
         },
         open: true,
         hotOnly: true
