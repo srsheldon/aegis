@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --config ./vendor/configuration/webpack/webpack.config.babel.js",
-    "generate": "node --harmony --experimental-modules ./server/utilities/generateSecureServerFiles.mjs"
+    "generate": "node --harmony --experimental-modules ./server/utilities/generateSecureServerFiles.mjs",
+    "start:docs": "http-server ./docs -o"
   },
   "repository": {
     "type": "git",
@@ -34,6 +35,7 @@
     "clean-webpack-plugin": "^3.0.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "http-server": "^0.12.3",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
