@@ -1,0 +1,10 @@
+{
+    "name": "LoginLab",
+    "short_name": "LoginLab",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#fff",
+    "description": "Experiment With Different Login Methods.",
+    "icons": [],
+    "related_applications": []
+  }
